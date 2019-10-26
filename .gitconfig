@@ -1,0 +1,13 @@
+[user]
+	email = remi@imagen.ai
+	name = RemiTorracinta
+[core]
+	autocrlf = input
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	new = "!f(){ git fetch -q origin master && git branch ${1:?} origin/master && git checkout ${1:?};};f"
+	master = "!f(){ git fetch -q origin master && git checkout origin/master;};f"
