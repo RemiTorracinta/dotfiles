@@ -1,0 +1,6 @@
+[build]
+    path = /Library/TeX/texbin
+    path = ~/.pyenv/shims
+    path = /usr/local/bin
+    path = /usr/bin
+    path = /bin
