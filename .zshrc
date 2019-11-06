@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/Users/remi/.local/bin:/usr/local/opt/postgresql@9.6/bin:./scripts/:$HOME/go/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:/Users/remi/.local/bin:/usr/local/opt/postgresql@9.6/bin:./scripts/:$HOME/go/bin:$PATH"
 
 # add fasd
 eval "$(fasd --init auto)"
