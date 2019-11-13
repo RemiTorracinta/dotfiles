@@ -90,4 +90,17 @@ export PYENV_ROOT="$HOME/.pyenv"
 if [ -f '/Users/remi/portables/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/remi/portables/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
+
 if [ -f '/Users/remi/portables/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/remi/portables/google-cloud-sdk/completion.zsh.inc'; fi
+
+
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+alias lf="lfcd"
