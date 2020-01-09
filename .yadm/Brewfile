@@ -1,4 +1,5 @@
-tap "caskroom/cask" tap "caskroom/versions"
+tap "caskroom/cask"
+tap "caskroom/versions"
 tap "cloverhealth/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
