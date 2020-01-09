@@ -118,3 +118,14 @@ pastefinish() {
 }
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
+
+
+# increase open file limit since pants uses lmdb
+ulimit -n 1000
+
+### share zsh history between terminals:
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Reloads the history whenever you use it
+setopt share_history
+#
