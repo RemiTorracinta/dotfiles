@@ -11,3 +11,7 @@
 [alias]
 	new = "!f(){ git fetch -q origin master && git branch ${1:?} origin/master && git checkout ${1:?};};f"
 	master = "!f(){ git fetch -q origin master && git checkout origin/master;};f"
+[rerere]
+	enabled = true
+[merge]
+	tool = meld
