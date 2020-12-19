@@ -1,4 +1,4 @@
-export PATH="/usr/local/opt/llvm/bin:/Users/remi/.local/bin:/usr/local/opt/postgresql@9.6/bin:./scripts/:$HOME/go/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:/Users/remi/.local/bin:./scripts/:$HOME/go/bin:$PATH"
 
 export ZSH="/Users/remi/.oh-my-zsh"
 
@@ -129,3 +129,10 @@ setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
 #
+
+
+# source work secrets, not checked into git
+source ~/.secrets
+
+
+export PATH="/usr/local/sbin:$PATH"
