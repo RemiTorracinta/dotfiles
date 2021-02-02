@@ -1,6 +1,6 @@
-export PATH="/usr/local/opt/llvm/bin:/Users/remi/.local/bin:./scripts/:$HOME/go/bin:$PATH"
+export PATH="/usr/local/opt/llvm/bin:/Users/remit/.local/bin:./scripts/:$HOME/go/bin:$PATH"
 
-export ZSH="/Users/remi/.oh-my-zsh"
+export ZSH="/Users/remit/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
@@ -87,11 +87,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/remi/portables/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/remi/portables/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/remit/portables/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/remit/portables/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 
-if [ -f '/Users/remi/portables/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/remi/portables/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/remit/portables/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/remit/portables/google-cloud-sdk/completion.zsh.inc'; fi
 
 
 lfcd () {
