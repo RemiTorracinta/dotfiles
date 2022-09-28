@@ -1,6 +1,6 @@
 export PATH="/usr/local/opt/llvm/bin:/Users/remit/.local/bin:./scripts/:$HOME/go/bin:$PATH"
 
-export ZSH="/Users/remit/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
