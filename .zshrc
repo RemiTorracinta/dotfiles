@@ -84,15 +84,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 export PYENV_ROOT="$HOME/.pyenv"
 
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/portables/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/portables/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-
-if [ -f '$HOME/portables/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/portables/google-cloud-sdk/completion.zsh.inc'; fi
-
-
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
