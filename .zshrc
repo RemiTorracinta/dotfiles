@@ -8,7 +8,6 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
   git
-  please
   zsh-syntax-highlighting
 )
 
