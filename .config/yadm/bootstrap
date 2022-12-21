@@ -11,5 +11,6 @@ chsh -s $(which zsh)
 # packages
 brew bundle install --file=/Users/remit/.yadm/Brewfile 
 
-
+# install fzf keybindings
+/opt/homebrew/opt/fzf/install --xdg --key-bindings --completion --no-update-rc
 
