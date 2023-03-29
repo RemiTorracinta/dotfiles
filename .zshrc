@@ -74,6 +74,8 @@ fi
 alias vim="nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# add fzf key binding when installed w/ apt
+source /usr/share/doc/fzf/examples/key-bindings.zsh 
 
 # add fasd
 eval "$(fasd --init auto)"
